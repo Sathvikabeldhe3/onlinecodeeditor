@@ -1,0 +1,30 @@
+.pallet {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+  background-color: var(--pallet-bg);
+  color: var(--pallet-color);
+  border-bottom: 1px solid var(--pallet-bb);
+  gap: 10px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pallet::-webkit-scrollbar {
+  display: none;
+}
+
+.pallet-file {
+  padding: 0.3em 0.6em;
+  user-select: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .pallet {
+    height: 40px;
+    font-size: 14px;
+  }
+}
